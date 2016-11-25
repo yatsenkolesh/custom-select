@@ -1,0 +1,109 @@
+.custom-select-title {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #81838c;
+}
+
+.custom-select-list {
+  border: 1px solid #e6e6e6;
+  margin-left: 10px;
+  margin-top: 1px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: #fff;
+  display: none;
+}
+
+.custom-select-option {
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.custom-select .custom-select-value {
+  padding: 10px 0 10px 20px;
+  cursor:pointer;
+}
+
+.custom-select {
+  font-family: "MinionPro-Regular", Helvetica, Arial, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+
+.custom-select-option:last-child {
+  border-bottom: 0;
+}
+.custom-select {
+  margin-left: 50px;
+}
+
+.custom-select-values {
+  font-family: "Poppins-Medium", Helvetica, Arial, sans-serif;
+  color: #737980;
+  display: block;
+  padding: 9px 10px;
+}
+
+
+
+.custom-select-list.active {
+  display: block;
+}
+.custom-select-value-selected {
+  border: 1px solid #e6e6e6;
+  border-radius: 30px;
+}
+
+.custom-select-value {
+  padding: 13px 0 13px 20px;
+  width: 220px;
+  display: inline-block;
+  margin-left: 10px;
+  font-family: "MinionPro-Regular", Helvetica, Arial, sans-serif;
+  color: #737980;
+  position: relative;
+}
+
+
+.custom-select-value-selected::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 6px;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-image: url(../img/general/arrowt.png);
+}
+
+.custom-select-value span {
+  font-family: "Poppins-Medium", Helvetica, Arial, sans-serif;
+}
+
+
+.custom-select-wrap  ul.active {
+  display: block;
+}
+
+.custom-select-wrap {
+  position: relative;
+}
+
+@media screen and (max-width: 1368px) {
+  .custom-select-value {
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .custom-select {
+    margin-left: 0;
+    margin-top: 20px;
+  }
